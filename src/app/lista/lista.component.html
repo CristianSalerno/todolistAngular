@@ -1,0 +1,13 @@
+<div class="card mt-3">
+  <div class="card-body" *ngFor="let tarea of arrTareas"
+    [ngClass]="{alto: tarea.prioridad == 'Alta', medio: tarea.prioridad == 'Media',bajo: tarea.prioridad == 'Baja'}">
+    <p class="card-text">
+      {{tarea.tarea}}
+
+    </p>
+    <button class="btnDelete" (click)="borrarTarea(tarea)">
+      eliminar
+    </button>
+  </div>
+
+</div>

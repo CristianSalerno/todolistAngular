@@ -1,0 +1,13 @@
+<div class="container mt-3">
+  <h1>TODO LIST</h1>
+  <div class="form-group mt-3">
+    <input type="text" placeholder="Agregar nueva tarea" [(ngModel)]="tareas.tarea">
+    <select class="form-control mt-3" id="exampleFormControlSelect1" [(ngModel)]="tareas.prioridad">
+      <option>Alta</option>
+      <option>Media</option>
+      <option>Baja</option>
+    </select>
+
+  </div>
+  <button class="btn btn-primary" (click)="agregarTarea()">Agregar</button>
+</div>
